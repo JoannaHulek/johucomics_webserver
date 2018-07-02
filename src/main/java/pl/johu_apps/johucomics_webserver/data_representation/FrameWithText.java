@@ -13,5 +13,20 @@ public class FrameWithText {
     private Frame frame;
     private String text;
 
+    public FrameWithText(){
 
+    }
+
+    public FrameWithText(Frame frame, String text) {
+        this.frame = frame;
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public Frame getFrame() {
+        return frame;
+    }
 }

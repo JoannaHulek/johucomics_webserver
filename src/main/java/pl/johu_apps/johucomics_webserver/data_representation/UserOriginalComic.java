@@ -16,4 +16,17 @@ public class UserOriginalComic {
     @OneToMany
     private List<FrameWithText> framesWithText;
 
+    public UserOriginalComic(Comic comic, List<FrameWithText> framesWithText) {
+        this.comic = comic;
+        this.framesWithText = framesWithText;
+    }
+
+
+    public Comic getComic() {
+        return comic;
+    }
+
+    public List<FrameWithText> getFramesWithText() {
+        return framesWithText;
+    }
 }
