@@ -4,6 +4,6 @@ import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import pl.johu_apps.johucomics_webserver.data_representation.UserOriginalComic;
 
-@RepositoryRestResource(collectionResourceRel = "userOriginalComicRepository")
+@RepositoryRestResource(collectionResourceRel = "userOriginalComicRepository",path="userOriginalComic")
 public interface UserOriginalComicRepository extends PagingAndSortingRepository <UserOriginalComic, Long> {
 }
